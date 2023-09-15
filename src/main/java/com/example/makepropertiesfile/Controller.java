@@ -6,6 +6,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
@@ -24,9 +26,27 @@ public class Controller implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Properties properties = new Properties();
-String fileName ="C:\\Users\\james.keogh\\IdeaProjects\\MakePropertiesFile\\src\\main\\java\\com\\example\\makepropertiesfile\\app.properties";
+
+        properties.setProperty("author","James M. Keogh");
+        properties.setProperty("title","Make properties");
+        properties.setProperty("controller","Controller.java");
+        properties.setProperty("company","ADGA");
+        properties.setProperty("timeMade","2023");
+        // Add key-value pairs
+
         try {
-            FileInputStream fileInputStream = new FileInputStream(fileName);
+            FileOutputStream fileOutputStream = new FileOutputStream("app.properties");
+            properties.store(fileOutputStream, "Application Properties");
+            fileOutputStream.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+        try {
+            FileInputStream fileInputStream = new FileInputStream("app.properties");
             properties.load(fileInputStream);
             fileInputStream.close();
         } catch (IOException e) {
