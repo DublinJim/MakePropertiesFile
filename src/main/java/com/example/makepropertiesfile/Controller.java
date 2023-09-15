@@ -33,15 +33,21 @@ String fileName ="C:\\Users\\james.keogh\\IdeaProjects\\MakePropertiesFile\\src\
             e.printStackTrace();
         }
 
-        String title = properties.getProperty("app.title");
-        String version = properties.getProperty("app.version");
-        String author = properties.getProperty("app.author");
-        String controller = properties.getProperty("app.controller");
+        String title = properties.getProperty("title");
+        String version = properties.getProperty("version");
+        String author = properties.getProperty("author");
+        String controller = properties.getProperty("controller");
+        String company= properties.getProperty("company");
+        String timeMade= properties.getProperty("timeMade");
 
-        txt2.setText(title);
-        txt1.setText(version);
+
+
         txt0.setText(author);
+        txt1.setText(version);
+        txt2.setText(title);
         txt3.setText(controller);
+        txt4.setText(company);
+        txt5.setText(timeMade);
 
     }
 }
