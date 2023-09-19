@@ -1,0 +1,160 @@
+/* Stylesheet used by the Settings dialog */
+/* Please follow Google Style Guide - https://google.github.io/styleguide/htmlcssguide.html */
+/*root*/
+.root{
+-fx-background-color:#dfedea;
+}
+
+.darkMode{
+-fx-background-color:#2A2A2A;
+}
+
+/*labels */
+.darkMode .label{
+-fx-text-fill: #E8E8E8;
+}
+
+/*buttons*/
+.darkMode .button{
+-fx-background-color:#4F4F4F;
+-fx-text-fill: #E8E8E8;
+}
+
+.darkMode .button:hover{
+-fx-background-color:#7d857d;/*second gray*/
+}
+
+/*textfields*/
+.darkMode .text-field {
+-fx-background-color: #727272;
+-fx-text-fill: #E8E8E8;
+}
+
+/*check boxes*/
+.darkMode .check-box {
+-fx-background-color: #2A2A2A;
+-fx-text-fill: #E8E8E8;
+}
+
+.darkMode .list-view{
+-fx-background-color: #2A2A2A;
+-fx-text-fill: #E8E8E8;
+}
+
+/* Checkbox when selected */
+.darkMode  .checkbox:selected .box {
+    -fx-background-color: #d5dadb; /* Background color when selected */
+    -fx-border-color: #e1f0f5; /* Border color when selected */
+}
+
+/* Checkbox when hovered */
+.darkMode .checkbox:hover .box {
+    -fx-background-color: #e74c3c; /* Background color when hovered */
+    -fx-border-color: #e74c3c; /* Border color when hovered */
+}
+
+/* Checkbox label color */
+/*
+.checkbox .label {
+    -fx-text-fill: #333333; */
+/* Text color of the label *//*
+
+}
+*/
+
+
+/*gridpanes*/
+
+.darkMode .grid-pane {
+    -fx-background-color: #7d857d; /* Background color of the GridPane */
+
+}
+
+
+
+
+/*choice boxes */
+.darkMode .choice-box {
+-fx-background-color: #2A2A2A;
+-fx-text-fill: #E8E8E8;
+}
+
+/*tabs */
+
+.darkMode .tab {
+-fx-background-color:#868f87; /*grey*/
+-fx-text-fill:#0c0d0c;  /*black*/
+}
+
+
+
+.darkMode .tab .tab-label {
+
+-fx-text-fill: #E8E8E8;
+}
+
+.darkMode .tab:hover {
+-fx-background-color:#acb0ad;/*third grey*/
+
+}
+
+
+/*
+titled pane*/
+.darkMode .titled-pane {
+-fx-background-color:#2A2A2A;/*third grey*/
+
+}
+
+
+
+
+.darkMode .titled-pane > *.content {
+-fx-background-color:#2A2A2A;/*third grey*/
+
+
+}
+
+.darkMode .titled-pane > .title  {
+
+-fx-background-color:#929692;/*third grey*/
+
+
+}
+
+.darkMode .titled-pane > .title >*.text {
+
+-fx-text-fill: #E8E8E8;
+
+}
+
+.darkMode .titled-pane:hover {
+
+-fx-background-color:#E0E0E0;
+
+}
+
+
+/*HBox*/
+
+.darkMode .hbox {
+    -fx-background-color: #2A2A2A; /* Background color of the HBox */
+
+}
+/*vbox*/
+.darkMode .vbox {
+    -fx-background-color: #2A2A2A; /* Background color of the VBox */
+
+}
+
+.darkMode .scroll-pane {
+-fx-background-color: #2A2A2A;
+}
+
+.darkMode .grid-pane {
+-fx-background-color: #2A2A2A;
+}
+
+.darkMode .list-view {
+-fx-background-color: #2A2A2A;
+}
